@@ -5,6 +5,6 @@ import { authSelectors } from '../../redux/auth';
 export default function PrivateRoute({children}){
 const isLoggedIn=useSelector(authSelectors.getIsLoggedIn)
 
-    return isLoggedIn ? children: <Navigate to='/login' replace /> 
+    return isLoggedIn ? children: <Navigate to='/react-hw-08-phonebook/login' replace /> 
     
 }

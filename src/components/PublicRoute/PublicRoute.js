@@ -5,6 +5,6 @@ import { authSelectors } from '../../redux/auth';
 export default function PublicRoute({ children, restricted=false }) {
     const isLoggedIn=useSelector(authSelectors.getIsLoggedIn)
 const shouldRedirect =isLoggedIn&& restricted;
-   return shouldRedirect?<Navigate to='/contacts'/>:children; 
+   return shouldRedirect?<Navigate to='/react-hw-08-phonebook/contacts'/>:children; 
 
 }

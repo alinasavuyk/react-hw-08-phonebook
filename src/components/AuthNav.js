@@ -18,7 +18,7 @@ export default function AuthNav() {
   return (
     <div>
       <NavLink
-        to="/register"
+        to="/react-hw-08-phonebook/register"
   
         style={styles.link}
       
@@ -26,7 +26,7 @@ export default function AuthNav() {
         Регистрация
       </NavLink>
       <NavLink
-        to="/login"
+        to="/react-hw-08-phonebook/login"
         style={styles.link}
        
       >

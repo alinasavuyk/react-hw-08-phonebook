@@ -31,22 +31,22 @@ console.log(isFetchingCurrentUser)
       <AppBar />
       <Suspense fallback={<h1>Загрузка...</h1>}>
       <Routes>
-        <Route path="/" element={
+        <Route path="/react-hw-08-phonebook" element={
               <PublicRoute >
              <HomeView/>
              </PublicRoute>
         } />
-        <Route path="/register" element={
+        <Route path="/react-hw-08-phonebook/register" element={
            <PublicRoute restricted>
              <RegisterView/>
            </PublicRoute>
         } />
-        <Route path="/login" element={
+        <Route path="/react-hw-08-phonebook/login" element={
               <PublicRoute restricted>
                 <LoginView/>
               </PublicRoute>} />
               <Route
-              path="contacts"
+              path="/react-hw-08-phonebook/contacts"
               element={
                 <PrivateRoute>
                   <ContactsView />

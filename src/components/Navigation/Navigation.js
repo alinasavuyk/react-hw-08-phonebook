@@ -16,7 +16,7 @@ const isLoggedIn=useSelector(authSelectors.getIsLoggedIn)
     <nav>
        <NavLink
         
-        to="/"
+        to="/react-hw-08-phonebook"
         className={({ isActive }) => (isActive ? `${s.activeLink}` : `${s.link}`)}
       >
         Головна
@@ -24,7 +24,7 @@ const isLoggedIn=useSelector(authSelectors.getIsLoggedIn)
       </NavLink>
   {isLoggedIn &&(
     <NavLink
-    to="/contacts"
+    to="/react-hw-08-phonebook/contacts"
     className={({ isActive }) => (isActive ? `${s.activeLink}` : `${s.link}`)}
     
   >
